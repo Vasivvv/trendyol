@@ -8,17 +8,13 @@ import {
   NavLink
 } from "react-router-dom";
 import Card from './Pages/Card';
-import About from './Pages/About';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Card/> ,
-  },
-  {
-    path: "/about/:id",
-    element: <><About/> <NavLink to={"/"}>home</NavLink></>  ,
-  },
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
